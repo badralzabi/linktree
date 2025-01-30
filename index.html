@@ -47,22 +47,22 @@
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 
-                <img src="./assets/img/myimg.png" class="myimg">
+                <img src="./assets/img/myimg.png" class="myimg fade-in">
             
                 <div class="card2">
-                <h4>Badr Alzabe</h4>
-                <p>بدر الزعبي مهندس قد الكوكب </p>
+                <h4 class="fade-in">Badr Alzabe</h4>
+                <p class="fade-in">بدر الزعبي مهندس برمجيات قد الكوكب </p>
             </div>
             
 <div class="card3">
     <div class="cainsta">
-    <img src="./assets/img/insta.png" class="insta">
+    <img src="./assets/img/insta.png" class="insta fade-in">
 </div>
 <div class="cainsta">
-    <img src="./assets/img/facebok.png" class="facebok">
+    <img src="./assets/img/facebok.png" class="facebok fade-in">
 </div>
 <div class="cainsta">
-    <img src="./assets/img/snapchat.png" class="snapchat">
+    <img src="./assets/img/snapchat.png" class="snapchat fade-in">
 </div>
 </div>
 <a href="#" style="text-decoration: none;">
@@ -70,32 +70,32 @@
     
 
 
-    <div class="card">
+    <div class="card fade-in">
         <a href="https://www.linkedin.com/in/badr-farhan-851a782aa/"   target="_blank"  style="text-decoration: none; color:black;">
         <h4 class="h-card" style="text-align: center;">linkedin</h4>
     </a>
     </div>
 
-    <div class="card">
+    <div class="card fade-in">
         <a href="https://www.instagram.com/bh.adr/"   target="_blank"  style="text-decoration: none; color:black;">
         <h4 class="h-card" style="text-align: center;">instagram</h4>
     </a>
     </div>
 
-    <div class="card">
+    <div class="card fade-in">
         <a href="https://www.facebook.com/profile.php?id=100024989853872"  target="_blank" style="text-decoration: none; color:black;">
         <h4 class="h-card" style="text-align: center;">facebook</h4>
     </a>
     </div>
 
     
-    <div class="card">
+    <div class="card fade-in">
         <a href="https://web.snapchat.com/bh.adr"  target="_blank" style="text-decoration: none; color:black;">
         <h4 class="h-card" style="text-align: center;">snapchat</h4>
         </a>
     </div>
 
-    <div class="card">
+    <div class="card fade-in">
         <a href="https://badrprog.vercel.app/"  target="_blank" style="text-decoration: none; color:black;">
         <h4 class="h-card">my website</h4>
         </a>
@@ -112,11 +112,29 @@
         
     </div>
 </section>
+<div id="qrcode"></div>
+<button onclick="generateQR()" class="but">تريد مثل هذه الصفحة؟</button>
 
+<script>
+    function generateQR() {
+      
+        document.getElementById("qrcode").innerHTML = "";
+      
+        
+        let qr = new QRCode(document.getElementById("qrcode"), {
+          text: "https://ig.me/m/bh.adr", 
+          width: 150,
+          height: 150,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H,
+        });
+      }
+      
 
+</script>
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 
 </body>
